@@ -1,0 +1,120 @@
+@import url("https://use.typekit.net/tmb3pnf.css");
+
+/* @media */
+@media(max-width:960px){
+    .container{
+      padding-right:3rem;
+      padding-left:3rem;
+    }
+}
+
+
+/* global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth
+}
+
+body {
+    background-color: #e5e5e5;
+    font-family: "Source Code Pro";
+    overflow-x: hidden;
+}
+
+
+/* classes */
+.v-header {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.name-title {
+    margin: auto; 
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-top: 35vh;
+    font-size: 7vw;
+    font-family: "Source Code Pro", serif;
+    position: relative;
+    color: #333;
+    z-index: 2;
+    mix-blend-mode: multiply;
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 1;
+    opacity: .2;
+    mix-blend-mode: add;
+}
+
+/* individual */
+.fullscreen-video-wrap video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.button-bar {
+    background: #eee;
+    color:#fff;
+    margin-top: 35vh;
+    font-size:0;
+    padding: .1rem 2rem;
+    z-index: 4;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: .6rem;
+    border-radius: 100px;
+    transition: .25s ease-in background-color, .25s ease-out padding, .25s;
+    cursor: pointer;
+}
+
+.button-bar::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: -1rem;
+    border-radius: 100px;
+    padding: 2rem 4rem;
+    z-index: -99;
+}
+
+.button-bar:focus {
+    outline: none;
+}
+
+.button-bar:hover {
+    padding: .1rem 3rem;
+    color: #fff;
+}

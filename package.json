@@ -1,0 +1,11 @@
+{
+  "name": "personalWebsite",
+  "version": "0.1.0",
+  "description": "Self explanatory",
+  "main": "index.js",
+  "author": "Lucas Magno",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
