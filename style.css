@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/tmb3pnf.css");
+@import url("https://use.typekit.net/acb7zqp.css");
 
 /* @media */
 @media(max-width:960px){
@@ -20,7 +20,7 @@
 
 body {
     background-color: #e5e5e5;
-    font-family: "Source Code Pro", serif;
+    font-family: "Source Code Pro", monospace;
     overflow-x: hidden;
 }
 
@@ -58,7 +58,7 @@ body {
     text-align: center;
     margin-top: 35vh;
     font-size: 7vw;
-    font-family: "Source Code Pro", serif;
+    font-family: 'Source Code Pro', monospace;
     position: relative;
     color: #333;
     z-index: 2;
