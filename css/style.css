@@ -1,21 +1,13 @@
 @import url("https://use.typekit.net/acb7zqp.css");
-
 /* @media */
-@media(max-width:960px){
-    .container{
-      padding-right:3rem;
-      padding-left:3rem;
-    }
-}
-
 
 /* global */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
-    scroll-behavior: smooth
 }
 
 body {
@@ -24,8 +16,8 @@ body {
     overflow-x: hidden;
 }
 
-
 /* classes */
+
 .v-header {
     height: 100vh;
     width: 100vw;
@@ -52,7 +44,7 @@ body {
 }
 
 .name-title {
-    margin: auto; 
+    margin: auto;
     width: auto;
     height: auto;
     text-align: center;
@@ -77,7 +69,81 @@ body {
     mix-blend-mode: add;
 }
 
+.bkg-img-container {
+    height: 50vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 1000;
+}
+
+.bkg-img-blend {
+    filter: blur(5px);
+    width: 100%;
+    position: absolute;
+    background: #1f6dd3;
+    height: 50vh;
+    mix-blend-mode: screen;
+    filter: opacity(30%);
+    z-index: 1;
+}
+
+.bkg-img {
+    filter: blur(5px);
+    opacity: 0%;
+    height: 50vh;
+    transform: translateZ(-0px) scale(1.13);
+    background-image: url(/img/background-code-image.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-text__items {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.main-text__img-ctn {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* perspective: 1px; */
+}
+
+.main-text__item1 {
+    background: #f28b2b;
+}
+
+.main-text__item2 {
+    background: url(/img/trophy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% -00px;
+    background-size: 50%;
+    z-index: -999999;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.main-text__items>p {
+    font-size: 3vh;
+    align-self: center;
+}
+
 /* individual */
+
 .fullscreen-video-wrap video {
     min-width: 100%;
     min-height: 100%;
@@ -85,9 +151,9 @@ body {
 
 .button-bar {
     background: #eee;
-    color:#fff;
+    color: #fff;
     margin-top: 35vh;
-    font-size:0;
+    font-size: 0;
     padding: .1rem 2rem;
     z-index: 4;
     position: absolute;
@@ -117,4 +183,17 @@ body {
 .button-bar:hover {
     padding: .1rem 3rem;
     color: #fff;
+}
+
+/* media */
+
+@media(max-aspect-ratio: 10/7) {
+    .container {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+    .main-text__items>p {
+        font-size: 1.8vh;
+        align-self: center;
+    }
 }

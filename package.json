@@ -1,11 +1,13 @@
 {
-  "name": "personalWebsite",
+  "name": "personalwebsite",
   "version": "0.1.0",
   "description": "Self explanatory",
   "main": "index.js",
   "author": "Lucas Magno",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.3.1"
+    "eslint": "^5.2.0",
+    "jquery": "^3.3.1",
+    "jshint": "^2.9.6"
   }
 }

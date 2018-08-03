@@ -2,17 +2,21 @@
 <html>
 
 <head>
+    <!--meta, link title, scripts-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lucas Magno</title>
     <link rel="stylesheet" href="css\style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="javascript" href="js\index.js">
     <style>
+        /*import typekit */
+
         @import url("https://use.typekit.net/acb7zqp.css");
+
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122919714-1"></script>
     <script>
+        //Google Analytics
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -21,11 +25,14 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-122919714-1');
+
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 
 </head>
 
-<body>
+<body onload="init();">
     <header class="nav-header">
         <nav>
 
@@ -34,15 +41,34 @@
 
     <header class="v-header container">
         <div class="fullscreen-video-wrap">
-            <video src="\Videos\Video_1.mp4" type="video/mp4" autoplay loop muted></video>
+            <video src="/Videos/Video_1.mp4" type="video/mp4" autoplay loop muted></video>
         </div>
         <div class="header-overlay"></div>
         <div class=name-title>HI, I'M
             <br>LUCAS MAGNO</div>
-        <button onclick="window.location.href='#section-2'" class="button-bar"></button>
+        <button onclick="document.getElementById('section-2').scrollIntoView({ behavior: 'smooth', block: 'start'});" class="button-bar">
+            <a href="#section-2">asdasd</a>
+        </button>
     </header>
-    <div id="section-2" style="margin: 1px;"></div>
-    <div style="margin-top: 10000px"></div>
+    <div id="section-2"></div>
+    <main class="bkg-img-container">
+        <canvas class="bkg-img-blend"></canvas>
+        <div class="bkg-img"></div>
+
+    </main>
+    </div>
+    <div class="main-text">
+        <div class="main-text__items main-text__item1">
+            <p>I am a programmer, VFX artist and animator who is passionate about technology. Most of what I do is part of an
+                event for the Technology Student Association, where I have competed in a number of different events.</p>
+        </div>
+        <div class="main-text__img-ctn">
+            <div class="main-text__items main-text__item2">
+            </div>
+        </div>
+    </div>
+    <div style="margin-bottom: 10000px"></div>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

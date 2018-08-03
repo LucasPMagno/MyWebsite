@@ -1,0 +1,46 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true,
+        "jquery": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": [
+            "warn",
+            4
+        ],
+        "linebreak-style": [
+            "off"
+        ],
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "semi": [
+            "warn",
+            "always"
+        ],
+        "no-console": [
+            "off"
+        ],
+        "no-var": [
+            "warn"
+        ],
+        "eol-last": [
+            "warn",
+            "always"
+        ],
+        "no-unused-vars": [
+            "off",
+            "always"
+        ],
+        "prefer-const": [
+            "warn"
+        ]
+    }
+}
