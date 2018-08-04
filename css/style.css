@@ -185,6 +185,10 @@ body {
     color: #fff;
 }
 
+.jsscrollmargin {
+    margin-bottom: 11px;
+}
+
 /* media */
 
 @media(max-aspect-ratio: 10/7) {
@@ -195,5 +199,51 @@ body {
     .main-text__items>p {
         font-size: 1.8vh;
         align-self: center;
+    }
+
+    .main-text__img-ctn {
+        width: 50%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* perspective: 1px; */
+    }
+
+    .main-text__item2 {
+        background: url(/img/trophy.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 25em 127%;
+        background-size: 100%;
+        z-index: -999999;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .button-bar {
+        background: #eee;
+        color: #fff;
+        margin-top: 35vh;
+        font-size: 0;
+        padding: .5rem 9rem;
+        z-index: 4;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        bottom: .6rem;
+        border-radius: 100px;
+        transition: .25s ease-in background-color, .25s ease-out padding, .25s;
+        cursor: pointer;
+    }
+
+    .button-bar::before {
+        padding: 100rem 30rem;
+    }
+
+    .button-bar:hover {
+        padding: .5rem 15rem;
+        color: #fff;
     }
 }
