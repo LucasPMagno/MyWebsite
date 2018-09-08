@@ -92,7 +92,7 @@ body {
     opacity: 0%;
     height: 50vh;
     transform: translateZ(-0px) scale(1.13);
-    background-image: url(/img/background-code-image.png);
+    background-image: url(./../assets/img/background-code-image.png);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -126,7 +126,7 @@ body {
 }
 
 .main-text__item2 {
-    background: url(/img/trophy.jpg);
+    background: url(./../assets/img/trophy.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -211,7 +211,7 @@ body {
     }
 
     .main-text__item2 {
-        background: url(/img/trophy.jpg);
+        background: url(/../assets/img/trophy.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
